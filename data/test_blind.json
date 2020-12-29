@@ -1,0 +1,20 @@
+{
+    "interfaces" : {
+      "BidCos-RF": {
+        "url": "/",
+        "host": "127.0.0.1",
+        "port": 32001
+      }
+    },
+
+    "devices": {
+      "BidCos-RF": {
+        "ABCDEF0123":{"type": "HM-LC-Bl1PBU-FM","behavoir":"be_hm_blind"}
+      }
+    },
+    "rooms": {
+      "Test": [
+        "HM-LC-Bl1PBU-FM ABCDEF0123:1"
+      ]
+    }
+}

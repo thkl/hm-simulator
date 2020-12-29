@@ -1,0 +1,38 @@
+{
+    "interfaces" : {
+      "HmIP-RF": {
+        "url": "/",
+        "host": "127.0.0.1",
+        "port": 32010
+      },
+      "BidCos-RF": {
+        "url": "/",
+        "host": "127.0.0.1",
+        "port": 32001
+      }
+    },
+
+    "devices": {
+      "HmIP-RF": {
+        "ABCDEF0123":{"type": "HmIP-SWO-B","behavoir":"be_hmip_swo_b"}
+      },
+      "BidCos-RF": {
+        "ABCDEF0124":{"type": "HM-Sen-MDIR-O","behavoir":"be_hm_sen_mdir"},
+        "ABCDEF0125":{"type": "HM-Sen-MDIR-O","behavoir":"be_hm_sen_mdir"},
+        "ABCDEF0126":{"type": "HM-Sen-MDIR-O","behavoir":"be_hm_sen_mdir"},
+        "ABCDEF0127":{"type": "HM-Sen-MDIR-O","behavoir":"be_hm_sen_mdir"},
+        "ABCDEF0128":{"type": "HM-Sen-MDIR-O","behavoir":"be_hm_sen_mdir"}
+      }
+    },
+    "rooms": {
+      "Aussenanlage": [
+        "HmIP-SWO-B ABCDEF0123:1"
+      ],
+      "Dachgeschoss":[
+        "HM-Sen-MDIR-O ABCDEF0124:1"
+      ],
+      "Erdgeschoss":["HM-Sen-MDIR-O ABCDEF0125:1"],
+      "Untergeschoss":["HM-Sen-MDIR-O ABCDEF0126:1"],
+      "Garagenanlage":["HM-Sen-MDIR-O ABCDEF0127:1","HM-Sen-MDIR-O ABCDEF0128:1"]
+    }
+}

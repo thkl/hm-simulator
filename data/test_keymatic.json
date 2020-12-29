@@ -1,0 +1,20 @@
+{
+    "interfaces" : {
+      "BidCos-RF": {
+        "url": "/",
+        "host": "127.0.0.1",
+        "port": 32001
+      }
+    },
+
+    "devices": {
+      "BidCos-RF": {
+        "ABCDEF0123":{"type": "HM-Sec-Key", "behavoir":"be_hm_sec_key"}
+      }
+    },
+    "rooms": {
+      "Test": [
+        "HM-Sec-Key ABCDEF0123:1"
+      ]
+    }
+}

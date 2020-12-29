@@ -1,0 +1,115 @@
+{
+    "paramsets": [{
+		"name": "MASTER",
+		"id": "weather_dev_master",
+		"parameter": []
+	}],
+
+    "channels": [{
+        "paramsets": [{
+            "parameter": [],
+            "name": "MASTER",
+            "id": "weather_ch_master"
+        }],
+        "type": "MAINTENANCE",
+		"adress": "0",
+		"direction": 2
+    },
+    {
+        "paramsets": [{
+        "name": "VALUES",
+        "id": "weather_ch_values",
+			"parameter": [
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "ACTUAL_TEMPERATURE",
+				    "type": "INTEGER",
+				    "tab_order": 0
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "ACTUAL_TEMPERATURE_STATUS",
+				    "type": "INTEGER",
+				    "tab_order": 1
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "HUMIDITY",
+				    "type": "INTEGER",
+				    "tab_order": 2
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "HUMIDITY_STATUS",
+				    "type": "INTEGER",
+				    "tab_order": 3
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "ILLUMINATION",
+				    "type": "FLOAT",
+				    "tab_order": 4
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "ILLUMINATION_STATUS",
+				    "type": "INTEGER",
+				    "tab_order": 5
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "SUNSHINEDURATION",
+				    "type": "INTEGER",
+				    "tab_order": 6
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "SUNSHINEDURATION_OVERFLOW",
+				    "type": "BOOL",
+				    "tab_order": 7
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "SUNSHINE_THRESHOLD_OVERRUN",
+				    "type": "BOOL",
+				    "tab_order": 8
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "WIND_SPEED",
+				    "type": "FLOAT",
+				    "tab_order": 9
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "WIND_SPEED_STATUS",
+				    "type": "INTEGER",
+				    "tab_order": 10
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "WIND_THRESHOLD_OVERRUN",
+				    "type": "BOOL",
+				    "tab_order": 11
+			    }
+            ]
+        }],
+        "type": "WEATHER_TRANSMIT",
+		"adress": "1",
+		"direction": 2
+    }],
+    "type": "HmIP-SWO-B",
+	"version": 41 
+}

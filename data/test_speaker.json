@@ -1,0 +1,20 @@
+{
+    "interfaces" : {
+      "BidCos-RF": {
+        "url": "/",
+        "host": "127.0.0.1",
+        "port": 32001
+      }
+    },
+
+    "devices": {
+      "BidCos-RF": {
+        "ABCDEF0123":{"type": "HM-SPEAKER"}
+      }
+    },
+    "rooms": {
+      "Test": [
+        "HM-SPEAKER ABCDEF0123:1"
+      ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "interfaces" : {
+      "HmIP-RF": {
+        "url": "/",
+        "host": "127.0.0.1",
+        "port": 32010
+      }
+    },
+
+    "devices": {
+      "HmIP-RF": {
+        "ABCDEF0123":{"type": "HmIP-BROLL","behavoir":"be_hmip_broll"}
+      }
+    },
+    "rooms": {
+      "Test": [
+        "HmIP-BROLL ABCDEF0123:3"
+      ]
+    }
+}

@@ -1,0 +1,229 @@
+{
+    "paramsets": [{
+		"name": "MASTER",
+		"id": "broll_dev_master",
+		"parameter": []
+	}],
+
+    "channels": [{
+        "paramsets": [{
+            "parameter": [
+                
+            ],
+            "name": "MASTER",
+            "id": "maint_ch_master"
+		},
+		{
+            "parameter": [
+                {
+					"flags": 1,
+					"operations": 7,
+					"name": "CONFIG_PENDING",
+					"type": "BOOL",
+					"tab_order": 0
+				}, {
+					"flags": 1,
+					"operations": 7,
+					"name": "UNREACH",
+					"type": "BOOL",
+					"tab_order": 1
+				}
+            ],
+            "name": "VALUES",
+            "id": "maint_ch_values"
+		}
+	],
+        "type": "MAINTENANCE",
+		"adress": "0",
+		"direction": 2
+    },
+    {
+        "paramsets": [{
+        "name": "VALUES",
+        "id": "broll_key_values",
+			"parameter": [
+                {
+	    			"flags": 1,
+		    		"operations": 4,
+			    	"name": "PRESS_SHORT",
+				    "type": "ACTION",
+				    "tab_order": 0
+			    },
+                {
+	    			"flags": 1,
+		    		"operations": 4,
+			    	"name": "PRESS_LONG",
+				    "type": "ACTION",
+				    "tab_order": 1
+			    }
+            ]
+        }],
+        "type": "KEY_TRANSCEIVER",
+		"adress": "1",
+		"direction": 2
+    },
+    {
+        "paramsets": [{
+        "name": "VALUES",
+        "id": "broll_key_values",
+			"parameter": [
+                {
+	    			"flags": 1,
+		    		"operations": 4,
+			    	"name": "PRESS_SHORT",
+				    "type": "ACTION",
+				    "tab_order": 0
+			    },
+                {
+	    			"flags": 1,
+		    		"operations": 4,
+			    	"name": "PRESS_LONG",
+				    "type": "ACTION",
+				    "tab_order": 1
+			    }
+            ]
+        }],
+        "type": "KEY_TRANSCEIVER",
+		"adress": "2",
+		"direction": 2
+    },
+    {
+        "paramsets": [{
+        "name": "VALUES",
+        "id": "broll_shutter_transmitter_values",
+			"parameter": [
+                {
+	    			"flags": 1,
+		    		"operations": 7,
+			    	"name": "LEVEL",
+				    "type": "FLOAT",
+				    "tab_order": 0
+			    },
+                {
+	    			"flags": 1,
+		    		"operations": 5,
+			    	"name": "PROCESS",
+				    "type": "ENUM",
+                    "tab_order": 1,
+                    "valuelist": ["STABLE", "NOT_STABLE"]
+                },
+                {
+	    			"flags": 1,
+		    		"operations": 5,
+			    	"name": "ACTIVITY_STATE",
+				    "type": "ENUM",
+				    "tab_order": 2,
+                    "valuelist": ["UNKNOWN", "UP", "DOWN", "STABLE"]
+			    }
+            ]
+        }],
+        "type": "SHUTTER_TRANSMITTER",
+		"adress": "3",
+		"direction": 2
+    },
+    {
+        "paramsets": [{
+        "name": "VALUES",
+        "id": "broll_shutter_transmitter_values",
+			"parameter": [
+                {
+	    			"flags": 1,
+		    		"operations": 7,
+			    	"name": "LEVEL",
+				    "type": "FLOAT",
+				    "tab_order": 0
+			    },
+                {
+	    			"flags": 1,
+		    		"operations": 5,
+			    	"name": "PROCESS",
+				    "type": "ENUM",
+                    "tab_order": 1,
+                    "valuelist": ["STABLE", "NOT_STABLE"]
+                },
+                {
+	    			"flags": 1,
+		    		"operations": 5,
+			    	"name": "ACTIVITY_STATE",
+				    "type": "ENUM",
+				    "tab_order": 2,
+                    "valuelist": ["UNKNOWN", "UP", "DOWN", "STABLE"]
+			    }
+            ]
+        }],
+        "type": "SHUTTER_VIRTUAL_RECEIVER",
+		"adress": "4",
+		"direction": 2
+    },
+    {
+        "paramsets": [{
+        "name": "VALUES",
+        "id": "broll_shutter_transmitter_values",
+			"parameter": [
+                {
+	    			"flags": 1,
+		    		"operations": 7,
+			    	"name": "LEVEL",
+				    "type": "FLOAT",
+				    "tab_order": 0
+			    },
+                {
+	    			"flags": 1,
+		    		"operations": 5,
+			    	"name": "PROCESS",
+				    "type": "ENUM",
+                    "tab_order": 1,
+                    "valuelist": ["STABLE", "NOT_STABLE"]
+                },
+                {
+	    			"flags": 1,
+		    		"operations": 5,
+			    	"name": "ACTIVITY_STATE",
+				    "type": "ENUM",
+				    "tab_order": 2,
+                    "valuelist": ["UNKNOWN", "UP", "DOWN", "STABLE"]
+			    }
+            ]
+        }],
+        "type": "SHUTTER_VIRTUAL_RECEIVER",
+		"adress": "5",
+		"direction": 2
+    },
+    {
+        "paramsets": [{
+        "name": "VALUES",
+        "id": "broll_shutter_transmitter_values",
+			"parameter": [
+                {
+	    			"flags": 1,
+		    		"operations": 7,
+			    	"name": "LEVEL",
+				    "type": "FLOAT",
+				    "tab_order": 0
+			    },
+                {
+	    			"flags": 1,
+		    		"operations": 5,
+			    	"name": "PROCESS",
+				    "type": "ENUM",
+                    "tab_order": 1,
+                    "valuelist": ["STABLE", "NOT_STABLE"]
+                },
+                {
+	    			"flags": 1,
+		    		"operations": 5,
+			    	"name": "ACTIVITY_STATE",
+				    "type": "ENUM",
+				    "tab_order": 2,
+                    "valuelist": ["UNKNOWN", "UP", "DOWN", "STABLE"]
+			    }
+            ]
+        }],
+        "type": "SHUTTER_VIRTUAL_RECEIVER",
+		"adress": "6",
+		"direction": 2
+    }
+    ],
+    "type": "HmIP-BROLL",
+	"version": 41 
+}

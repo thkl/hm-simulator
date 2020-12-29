@@ -1,0 +1,85 @@
+{
+    "paramsets": [{
+		"name": "MASTER",
+		"id": "door_dev_master",
+		"parameter": []
+	}],
+
+    "channels": [{
+        "paramsets": [{
+            "parameter": [
+                
+            ],
+            "name": "MASTER",
+            "id": "maint_ch_master"
+        },
+        {
+            "parameter": [
+                {
+					"flags": 1,
+					"operations": 7,
+					"name": "CONFIG_PENDING",
+					"type": "BOOL",
+					"tab_order": 0
+				}, {
+					"flags": 1,
+					"operations": 7,
+					"name": "UNREACH",
+					"type": "BOOL",
+					"tab_order": 1
+				}
+            ],
+            "name": "VALUES",
+            "id": "maint_ch_values"
+		}
+    ],
+        "type": "MAINTENANCE",
+		"adress": "0",
+		"direction": 2
+    },
+    {
+        "paramsets": [{
+        "name": "VALUES",
+        "id": "door_ch_values",
+			"parameter": [
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "DOOR_STATE",
+				    "type": "INTEGER",
+				    "tab_order": 0
+			    },
+                {
+	    			"flags": 9,
+		    		"operations": 5,
+			    	"name": "DOOR_COMMAND",
+				    "type": "INTEGER",
+				    "tab_order": 1
+                },
+                {
+	    			"flags": 1,
+		    		"operations": 5,
+			    	"name": "PROCESS",
+				    "type": "ENUM",
+                    "tab_order": 2,
+                    "valuelist": ["STABLE", "NOT_STABLE"]
+                }
+            ]
+        }],
+        "type": "DOOR_RECEIVER",
+		"adress": "1",
+		"direction": 2
+    },
+    {
+        "paramsets": [{
+                "parameter": [],
+                "name": "VALUES",
+                "id": "door_ch_values"
+        }],
+        "type": "SIMPLE_SWITCH_RECEIVER",
+		"adress": "2",
+		"direction": 2
+    }],
+    "type": "HmIP-MOD-HO",
+	"version": 41 
+}

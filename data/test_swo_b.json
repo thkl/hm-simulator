@@ -1,0 +1,29 @@
+{
+    "interfaces" : {
+      "HmIP-RF": {
+        "url": "/",
+        "host": "127.0.0.1",
+        "port": 32010
+      },
+      "BidCos-RF": {
+        "url": "/",
+        "host": "127.0.0.1",
+        "port": 32001
+      }
+    },
+
+    "devices": {
+      "HmIP-RF": {
+        "ABCDEF0123":{"type": "HmIP-SWO-B","behavoir":"be_hmip_swo_b"}
+      },
+      "BidCos-RF": {
+        "ABCDEF0124":{"type": "HM-Sen-MDIR-O","behavoir":"be_hm_sen_mdir"}
+      }
+    },
+    "rooms": {
+      "Test": [
+        "HmIP-SWO-B ABCDEF0123:1",
+        "HM-Sen-MDIR-O ABCDEF0124:1"
+      ]
+    }
+}
